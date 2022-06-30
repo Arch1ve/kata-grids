@@ -1,0 +1,368 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Regular"),
+    url("../fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Bold"),
+    url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: local("TTLakes-Medium"),
+    url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "TTLakes", Arial, Helvetica, sans-serif;
+  background: #F8F8F8;
+}
+
+.page-header__nav {
+  margin-bottom: 24px;
+}
+
+.nav__menu-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__button--burger {
+  background: url(../img/burger.svg);
+}
+
+.logo__img {
+  width: 97px;
+  height: 51px;
+}
+
+.nav__corner-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav__button--repair {
+  background: url(../img/repair.svg);
+  margin-right: 16px;
+}
+
+.nav__button--status {
+  background: url(../img/status.svg);
+}
+
+.header__title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  background: url(../img/highlight.svg) no-repeat;
+}
+
+.info__list {
+  display: flex;
+  align-items: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.info__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.info__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.info__button--active {
+  padding: 8px 22px;
+  border: 2px solid #B8FFEC;
+  background: #fff;
+}
+
+.info__link {
+  display: none;
+}
+
+.description-area__paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.description-area__opener-button {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background: url(../img/opener-icon.svg) no-repeat left center;
+}
+
+.description-area__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description-area__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 88px;
+  }
+
+  .nav__container {
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+    background: #fff;
+    border-bottom: 1px solid #D9FFF5;
+  }
+
+  .nav__button--burger {
+    margin-right: 17px;
+  }
+
+  .logo__link::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 186px;
+    height: 32px;
+    border-left: 2px solid #EAEAEA;
+    cursor: auto;
+  }
+
+  .nav__button-text {
+    display: none;
+  }
+
+  .header__title {
+    padding-left: 16px;
+  }
+
+  .page-header {
+    margin-bottom: 24px;
+  }
+
+  .choose-list__container {
+    padding-left: 16px;
+  }
+
+  .info__list-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .info__list {
+    margin-bottom: 24px;
+  }
+
+  .description-area__text {
+    height: 140px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .description-area__paragraph:first-child {
+    margin-bottom: 16px;
+  }
+
+  .description-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description-area__container {
+    flex: 1 1 100%;
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .container {
+    width: 100%;
+    height: 88px;
+  }
+
+  .nav__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background: #fff;
+    border-bottom: 1px solid #D9FFF5;
+  }
+
+  .nav__button--burger {
+    margin-right: 42px;
+  }
+
+  .nav__button--burger::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 84px;
+    height: 32px;
+    border-left: 2px solid #EAEAEA;
+    cursor: auto;
+  }
+
+  .nav__button-text {
+    display: none;
+  }
+
+  .page-header {
+    margin-bottom: 32px;
+  }
+
+  .info__list-item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .header__title {
+    padding-left: 24px;
+  }
+
+  .choose-list__container {
+    padding-left: 24px;
+  }
+
+  .description-area {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .description-area__container {
+    padding-left: 24px;
+    width: auto;
+  }
+
+  .description-area__text {
+    width: 320px;
+    height: 190px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .description-area__paragraph:first-child {
+    margin-bottom: 24px;
+  }
+
+  .description-area__img {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .container {
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  .nav__container {
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+  }
+
+  .nav__menu-buttons {
+    display: none;
+  }
+
+  .nav__corner-buttons:first-child {
+    margin-right: 32px;
+  }
+
+  .nav__button--repair::before {
+    display: inline-block;
+    content: 'Оставить заявку';
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+
+  .nav__button--status::before {
+    display: inline-block;
+    content: 'Статус ремонта';
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+
+}

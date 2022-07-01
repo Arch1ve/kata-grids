@@ -10,21 +10,32 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="nav page-header__nav">
-      <div class="container nav__container">
-        <div class="nav__menu-buttons">
-          <button class="nav__button nav__button--burger" title="Меню"></button>
-          <a href="#" class="logo logo__link">
-            <img src="img/logo.svg" alt="Логотип" class="logo__img">
-          </a>
+    <div class="container page-header-container">
+      <nav class="nav page-header__nav">
+        <div class="nav__area">
+          <div class="nav__menu-buttons">
+            <button class="nav__button nav__button--burger" title="Меню"></button>
+            <a href="#" class="logo logo__link">
+              <img src="img/logo.svg" alt="Логотип" class="logo__img">
+            </a>
+          </div>
+          <div class="tablet-buttons nav__tablet-buttons">
+            <button class="nav__button tablet-buttons__button nav__button--call" title="Позвонить"></button>
+            <button class="nav__button tablet-buttons__button nav__button--chat" title="Обратная связь"></button>
+            <button class="nav__button tablet-buttons__button nav__button--profile" title="Профиль"></button>
+          </div>
+          <div class="nav__corner-buttons">
+            <button class="nav__button nav__button--repair corner-button" title="Оставить заявку">
+              <span class="corner-button__text">Оставить заявку</span>
+            </button>
+            <button class="nav__button nav__button--status corner-button" title="Статус ремонта">
+              <span class="corner-button__text">Статус ремонта</span>
+            </button>
+          </div>
         </div>
-        <div class="nav__corner-buttons">
-          <button class="nav__button nav__button--repair corner-button"></button>
-          <button class="nav__button nav__button--status corner-button"></button>
-        </div>
-      </div>
-    </nav>
-    <h1 class="header__title">Услуги и сервисы</h1>
+      </nav>
+      <h1 class="header__title">Услуги и сервисы</h1>
+    </div>
   </header>
   <main class="main">
     <section class="info">
@@ -37,23 +48,23 @@
               </button>
             </li>
             <li class="info__list-item">
-              <button class="info__button">
-                Ремонтируемые бренды
+              <button class="info__button" title="Ремонтируемые устройства">
+                Ремонтируемые устройства
               </button>
             </li>
             <li class="info__list-item">
-              <button class="info__button">
-                Ремонтируемые бренды
+              <button class="info__button" title="Цены на услуги">
+                Цены на услуги
               </button>
             </li>
             <li class="info__list-item">
-              <button class="info__button">
-                Ремонтируемые бренды
+              <button class="info__button" title="Адреса сервисных центров">
+                Адреса сервисных центров
               </button>
             </li>
             <li class="info__list-item">
-              <button class="info__button">
-                Ремонтируемые бренды
+              <button class="info__button" title="Специальные цены">
+                Специальные цены
               </button>
             </li>
           </ul>
@@ -69,8 +80,8 @@
             </div>
             <button class="description-area__opener-button" title="Читать далее">Читать далее</button>
           </div>
+          <img src="img/info.jpg" alt="Фото CPS" class="description-area__img">
         </div>
-        <img src="img/info.jpg" alt="Фото CPS" class="description-area__img">
       </div>
     </section>
   </main>

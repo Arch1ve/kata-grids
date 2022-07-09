@@ -477,3 +477,140 @@ body {
     margin-right: 36px;
   }
 }
+
+/* Mobile menu */
+
+.mobile-menu {
+  background-color: #fff;
+  width: 320px;
+  filter: drop-shadow(
+          -2px 0px 4px rgba(69, 79, 126, 0.02),
+          16px 0px 52px rgba(14, 24, 80, 0.2));
+}
+
+.mobile-menu .nav__menu-buttons {
+  display: flex;
+}
+
+.mobile-menu .nav__button--burger::after {
+  display: none;
+}
+
+.mobile-menu .container {
+  width: 100%;
+}
+
+.mobile-menu .logo__link::after {
+  display: none;
+}
+
+.mobile-menu-header {
+  margin-bottom: 47px;
+}
+
+.mobile-menu .nav__area {
+  padding: 23px 24px 0;
+  border: none;
+  justify-content: space-between;
+}
+
+.mobile-menu .nav__button--burger {
+  background: url(../img/close.svg);
+  margin-right: 17px;
+}
+
+.nav__button--search {
+  background: url(../img/search.svg);
+}
+
+.categories__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__item {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.categories__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.categories__list .active {
+  color: #7E7E82;
+  background: url(../img/highlight-menu.svg) no-repeat left center;
+}
+
+.categories__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.categories__item:not(.active):hover {
+  background: linear-gradient(90deg, rgba(215,215,219,1) 0%, rgba(226,226,233,1) 47%, rgba(255,255,255,1) 100%);
+}
+
+.categories__item:not(.active):hover .categories__button {
+  transition-duration: 300ms;
+  transform: scale(1.1);
+}
+
+.mobile-menu__main {
+  margin-bottom: 270px;
+}
+
+.contacts__container {
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+.contacts__buttons {
+  display: block;
+  font-size: 0;
+  margin-bottom: 16px;
+}
+
+.contacts .tablet-buttons__button:not(:last-child) {
+  margin-right: 16px;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  font-style: inherit;
+  margin-bottom: 40px;
+}
+
+.contacts__link--mail {
+  margin-bottom: 12px;
+}
+
+.contacts__link--phone {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.language__list {
+  display: flex;
+}
+
+.language__item {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.language__item:not(:last-child) {
+  margin-right: 7px;
+}
+
+.language .active {
+  color: #7E7E82;
+}

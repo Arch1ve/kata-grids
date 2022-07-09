@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile menu</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="mobile-menu">
+    <header class="mobile-menu-header">
+      <div class="container mobile-menu-header-container">
+        <nav class="nav mobile-menu-header__nav">
+          <div class="nav__area">
+            <div class="nav__menu-buttons">
+              <button class="nav__button nav__button--burger" title="Меню"></button>
+              <a href="#" class="logo logo__link">
+                <img src="img/logo.svg" alt="Логотип" class="logo__img">
+              </a>
+            </div>
+            <button class="nav__button nav__button--search" title="Поиск"></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main mobile-menu__main">
+      <section class="categories">
+        <div class="container categories__container">
+          <ul class="categories__list">
+            <li class="categories__item active">
+              <button class="categories__button" disabled title="Ремонт техники">Ремонт техники</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Услуги и сервисы">Услуги и сервисы</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Корпоративным клиентам">Корпоративным клиентам</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Продавцам техники">Продавцам техники</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Партнерам">Партнерам</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Производителям">Производителям</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Наши сервисные центры">Наши сервисные центры</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__button" title="Контакты">Контакты</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="contacts mobile-menu__footer">
+      <div class="container contacts__container">
+        <div class="tablet-buttons contacts__buttons">
+          <button class="nav__button tablet-buttons__button nav__button--call" title="Позвонить"></button>
+          <button class="nav__button tablet-buttons__button nav__button--chat" title="Обратная связь"></button>
+          <button class="nav__button tablet-buttons__button nav__button--profile" title="Профиль"></button>
+        </div>
+        <address class="contacts__address">
+          <a href="mailto:mail@cps.com" class="contacts__link contacts__link--mail" title="Почта">mail@cps.com</a>
+          <a href="tel:88008908900" class="contacts__link contacts__link--phone" title="Телефон">8 800 890 8900</a>
+        </address>
+        <div class="language contacts__language">
+          <ul class="language__list">
+            <li class="language__item active">
+              <a href="#" class="language__link language__link--ru" title="Русский">RU</a>
+            </li>
+            <li class="language__item">
+              <a href="#" class="language__link language__link--en" title="English">EN</a>
+            </li>
+            <li class="language__item">
+              <a href="#" class="language__link language__link--ch" title="čeština">CH</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

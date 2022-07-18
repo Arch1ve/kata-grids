@@ -481,6 +481,8 @@ body {
 /* Mobile menu */
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   width: 320px;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -561,7 +563,12 @@ body {
 }
 
 .mobile-menu__main {
-  margin-bottom: 270px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.mobile-menu__footer {
+  flex: 0 0 auto;
 }
 
 .contacts__container {
@@ -611,4 +618,18 @@ body {
 
 .language .active {
   color: #7E7E82;
+}
+
+.language__item:not(.active):hover {
+  transform: scale(1.1);
+}
+
+.mobile-menu .nav__button:hover {
+  transition-duration: 200ms;
+  transform: scale(1.2);
+}
+
+.mobile-menu .nav__button--burger:hover {
+  transition-duration: 300ms;
+  transform: rotate(180deg) scale(1.2);
 }

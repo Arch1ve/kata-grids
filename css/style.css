@@ -207,6 +207,29 @@ body {
   display: none;
 }
 
+.services-container {
+  background-color:  #F2F2F2;
+}
+
+.swiper {
+  display: none;
+  background-color: inherit;
+}
+
+.services__title {
+  padding: 16px;
+  color: #7E7E82;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 70px;
+  border: 1px solid black;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 100%;
@@ -276,6 +299,15 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 16px;
+  }
+
+  .swiper {
+    display: block;
+    height: 100px;
+  }
+
+  .services-container {
+    padding-left: 16px;
   }
 }
 
